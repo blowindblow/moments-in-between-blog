@@ -19,7 +19,7 @@
   {
     "path": "posts/2021-09-04-the-beginning/",
     "title": "Moments in between",
-    "description": "The beginning",
+    "description": "The beginning.",
     "author": [
       {
         "name": "Jolene",
@@ -30,7 +30,7 @@
     "categories": [],
     "contents": "\r\nI have finally created a blog where present me can create R tutorials for future me. Often, a lot of brain juices goes into a crafting a particular function or generating a complex graph but when I inevitably revisit those code, I can never understand them. Also, all the interesting R packages or snippets I come across while scrolling through my Twitter feed needs a home where I can easily visit.\r\nIt takes a lot of effort to go from raw data to clean data and then from clean data to graphs, plots, etc. I aspire to capture those ‘moments in between’ – where the dirty work takes place – in this blog. I am by no means an expert in R but hopefully this blog brings me a step closer to being one.\r\nSome posts will probably be embarrassingly basic. A tiny hope I have is that instead of consulting google on which to use (geom_col or geom_bar), I can get my answers from this self curated blog of mine. It’s probably a moonshot, if the volume and content of my Google queries is anything to by.\r\nInitially, I wanted to use blogdown for this blog but inertia is high and blogdown seems a lot more complicated than distill, It doesn’t seem that I’m losing out any important features by choosing distill. So for now, I’m going with distill. The priority is getting this blog up and running as soon as possible and if you’re reading this, then I consider it a success. I have been sitting on this idea for almost a year!\r\nWhat’s next?\r\nRandom R tips/guides. Curation of interesting R projects. Data explorations. TidyTuesday escapades. That’s a wish list. Realistically, this blog will not have constant updates (though I really really want to be consistent). My only hope is that I will keep this running. No matter the pace, I just hope it doesn’t stop.\r\nHere goes nothing!\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-09-04T01:07:54+08:00",
+    "last_modified": "2021-09-04T01:13:58+08:00",
     "input_file": "the-beginning.knit.md"
   }
 ]

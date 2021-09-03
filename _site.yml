@@ -1,7 +1,7 @@
-name: "moments-in-between-blog"
+name: "Moments in between"
 title: "Moments in between"
-description: |
-  Moments in between
+description: 
+  Mapping my data explorations and my journey with R 
 output_dir: "_site"
 navbar:
   right:

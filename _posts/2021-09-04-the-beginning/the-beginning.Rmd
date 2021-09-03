@@ -1,7 +1,7 @@
 ---
 title: "Moments in between"
 description: |
-  The beginning
+  The beginning.
 author:
   - name: Jolene
     url: 

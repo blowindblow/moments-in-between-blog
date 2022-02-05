@@ -1,5 +1,6 @@
 name: "Moments in between"
-title: "Moments in between"
+title: "Bits and Pieces"
+theme: theme.css
 description: 
   Mapping my data explorations and my journey with R 
 output_dir: "_site"

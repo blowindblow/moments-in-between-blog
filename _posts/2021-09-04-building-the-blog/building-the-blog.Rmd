@@ -1,0 +1,37 @@
+---
+title: "Building the blog"
+description: |
+  A short description of the post.
+author:
+  - name: Jolene
+    url: {}
+date: 09-04-2021
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[Including meta-tagging and extra content](https://themockup.blog/posts/2021-03-21-including-and-meta-tagging-extra-content-in-a-distill-blog/){.uri}
+
+[Some css theme tips](https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/)
+
+[Creating distill site (theming, navigation)](https://rstudio.github.io/distill/website.html)
+
+<https://ellakaye.rbind.io/posts/2021-05-08-welcome-to-my-distill-website/>
+
+<https://www.shamindras.com/posts/2019-07-31-shrotriya2019distillpt2/>
+
+<https://holtzy.github.io/Pimp-my-rmd/>
+
+<https://towardsdatascience.com/ten-awesome-r-markdown-tricks-56ef6d41098>
+
+<https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/>
+
+random
+
+<https://www.ericekholm.com/posts/2021-01-06-pulling-youtube-transcripts/>

@@ -1,0 +1,48 @@
+---
+title: "Crossjoins"
+description: |
+  Exploring crossjoins to find all possible combinations of elements in a list
+author:
+  - name: Jolene
+date: 09-08-2021
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+Suppose we want to find all combinations of desserts from a list of fruits and a list of dessert types. `{data.table}` has a crossjoin function that is extremely useful to achieve that. `CJ` automatically arranges the vectors alphabetically.
+
+```{r setup, include=TRUE}
+library(purrr)
+library(crossmap)
+library(data.table)
+library(rbenchmark)
+list <- list(
+  fruit <- c('apple','apple', 'orange', 'pear', 'peach'), 
+  type <- c('cake', 'tart', 'pie'),
+  s <- c('s', 'd', 'f')
+)
+
+# CJ(x,y) forms a data.table from the cross product of the vectors 
+CJ(fruit, type, unique = T)
+
+```
+
+Sidenote: I found that if I changed all the assignment operators for the list to equals, `fruit` and `type` become vectors within the list but do not exist outside the list. In other words, if I try to view `fruit`, R returns `Error: object 'fruit' not found`. 
+
+Since `CJ(x,y)` is a `data.table`, the `{data.table}` syntax `DT[...]` can be used.
+
+```{r}
+dessert_combi_dt <- CJ(fruit, type)[, dessert := paste(fruit, type)]  
+dessert_combi_dt
+```
+
+Or, if you just require a vector of the combinations 
+
+```{r}
+dessert_combi <- CJ(fruit, type)[,paste(fruit, type)]  
+dessert_combi
+```
+
+This post was inspired by a tip I saw online, using `xmap_` functions from `{crossmap}` `r emo::ji('package')`

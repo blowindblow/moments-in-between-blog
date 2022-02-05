@@ -1,0 +1,138 @@
+---
+title: "Three-way contingency table"
+description: |
+  Testing mutual (and partial) independence of variables in a three-way contingency table
+author:
+  - name: Jolene
+date: 02-04-2022
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+bibliography: biblio.bib
+---
+This was one of my many explorations into analysis of multiple categorical data. The biostatistician whom I consulted suggested the use of a three-way contingency table as detailed in Chapter 4 (Multidimensional Tables) of the book "The Analysis of Contingency Tables" [@everitt1992analysis]. I spent some time writing a function for the proposed function. Someone has probably already written a function for this but I figured it would be good practice to write the function from scratch. It forces me to read the text in detail and fully understand the hypothesis testing. It was my first time using `arrays` in R. Before this, I never really had the need to explore beyond two dimensional dataframes. 
+
+```{r setup}
+three_way_xtab <- function(array, partial = 0){  
+  # if partial independence is of interest, set partial = 1
+  
+  # two variable marginals
+  n_ij <- apply(array, c(1, 2), sum)
+  n_ik <- apply(array, c(1, 3), sum)
+  n_jk <- apply(array, c(2, 3), sum)
+  
+  
+  # single variable marginals
+  n_i <- apply(array, 1, sum)
+  n_j <- apply(array, 2, sum)
+  n_k <- apply(array, 3, sum)
+  N <- sum(array)
+  
+  
+  # creating an empty array based on original data array
+  E <- array(0,
+             dim = dim(array),
+             dimnames = dimnames(array))
+  Ei <- E
+  Ej <- E
+  Ek <- E
+  
+  # loop to compute expected values
+  for (i in 1:nrow(array)) {
+    for (j in 1:ncol(array)) {
+      for (k in 1:nrow(aperm(array))) {
+        E[i, j, k] <- n_i[i] * n_j[j] * n_k[k] / N ^ 2
+      }
+    }
+  }
+  df = prod(dim(array)) - sum(dim(array)) + 2
+  chisq <- sum(((array - E) ^ 2) / E)  # test of mutual independence
+  pval  <- pchisq(chisq, df, lower.tail = FALSE)
+  
+  output <- list(
+      test   = "3 variable contingency table",
+      chisq  = chisq,
+      pvalue = pval,
+      df     = df,  # degrees of freedom
+      E      = E  # expected values under hypothesis of mutual independence (of all 3 variables)
+  )
+  
+  # if test of mutual independence above gives a significant result, 
+  # further testing is required to ascertain if an association exists between two or all three variables 
+  # hence hypotheses of partial independence is of interest
+  
+  # if true, the partial independence hypothesis implies the truth of additional composite hypothesis
+  # e.g. for hypothesis P_ijk = P_i.. * P_.jk: if true, P_ij. = P_i.. * P_.j. && P_i.k = P_i.. * P_..k
+  
+  if (partial == 1 && pval < 0.05) {
+    for (i in 1:nrow(array)) {
+      for (j in 1:ncol(array)) {
+        for (k in 1:nrow(aperm(array))) {
+          Ei[i, j, k] <- n_i[i] * n_jk[j,k] / N
+          Ej[i, j, k] <- n_j[j] * n_ik[i,k] / N
+          Ek[i, j, k] <- n_k[k] * n_ij[i,j] / N
+        }
+      }
+    }
+    
+    # degrees of freedom
+    df_ijk = prod(dim(array)) - prod(dim(array)[2:3]) - dim(array)[1] + 1
+
+    # test hypothesis that i is independent of j and k
+    chisq_i <- sum(((array - Ei) ^ 2) / Ei)
+    pval_i  <- pchisq(chisq_i, df_ijk, lower.tail = FALSE)
+    
+    # test hypothesis that j is independent of i and k
+    chisq_j <- sum(((array - Ej) ^ 2) / Ej)
+    pval_j  <- pchisq(chisq_j, df_ijk, lower.tail = FALSE)
+    
+    # test hypothesis that k is independent of i and j
+    chisq_k <- sum(((array - Ek) ^ 2) / Ek)
+    pval_k  <- pchisq(chisq_k, df_ijk, lower.tail = FALSE)
+    
+    output <- list(
+      test     = "3 variable contingency table",
+      chisq    = chisq,
+      pvalue   = pval,
+      df       = df,
+      E        = E,
+      Ei       = Ei,  # expected values under hypothesis that i is independent of j and k
+      Ej       = Ej,  # expected values under hypothesis that j is independent of i and k
+      Ek       = Ek,  # expected values under hypothesis that k is independent of i and j
+      df_ijk   = df_ijk,  # degrees of freedom for partial independence hypothesis
+      chisq_i  = chisq_i,
+      chisq_j  = chisq_j,
+      chisq_k  = chisq_k,
+      pval_i   = pval_i,
+      pval_j   = pval_j,
+      pval_k   = pval_k
+    )
+  }
+  
+  return(output)
+}
+
+```
+
+Nested loops might not be the most efficient way to go about it but this is a pretty simple analysis. I was just happy that I got it to work. Now on to testing the function! I used the example that was shown in the book. It was mostly to double check that my function computed the figures correctly. 
+
+```{r test, warning=FALSE}
+# test input 
+# this is the same example shown in the book
+s <- array(
+  c(16,1,7,1,15,3,34,8,5,1,3,3),
+  dim = c(2,2,3),
+  dimnames = list(
+    c('nondev', 'dev'),
+    c('notatrisk', 'atrisk'),
+    c('low','med','high')
+    )
+  )
+result <- three_way_xtab(s, partial = 1)
+
+# print results (exclude tables of expected value)
+result[names(result) != c('E','Ei','Ej','Ek')]
+```
+
+It should be noted that only mutual independence (of all 3 variables) and partial independence (of any pair of variables) is considered in this function. The next chapter in the book details second order relationships. In other words, an relationship between two of the variables may differ in degree or direction in different categories of the third. The hypothesis of no second-order association between the variables is relatively straightforward. However, there is additional complexity in obtaining the estimates as they can no longer be found directly as products of various marginal totals as is currently done in testing first order relationships. 

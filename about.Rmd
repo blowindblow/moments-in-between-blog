@@ -4,14 +4,6 @@ description: |
   Some additional details about the blog
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+I enjoy data visualisation, and just working with data in general. My tool of choice is `R`, though occasionally I delve into `Python.` `Tableau` has also been really useful for quick prototyping, just to get an idea of how the graph in my head actually looks like. When I was a student, I used `Stata` for my final year project. That's about it! I've been toying with the idea of learning `javascript` as well but I really should just focus on `R` and `Python` for now.
 
-This blog is where present me can create R tutorials for future me. A lot of brain juices goes into a crafting a particular function or generating a complex graph but when I inevitably revisit those code, I can never understand them. Also, all the interesting R packages or snippets I come across while scrolling through my Twitter feed needs a home where I can easily visit.
-
-The title "Moments in between" is inspired by Nell's, a Korean rock band, music album. If I were to compare their music to Western bands, it is a mix of Coldplay and Radiohead. Frankly, I'm not super familiar with either of them but it's a comparison that I've seen around often, and agree with.
-
-It takes a lot of effort to go from raw data to clean data and then from clean data to graphs, plots, etc. I aspire to capture those 'moments in between' -- where the dirty work takes place -- in this blog. I am by no means an expert in R but hopefully this blog brings me a step closer to being one.
-
-It's been hard to even start on any post because I can't help but feel that it should be somewhat substantial. I don't mean I want every post to be a huge data analysis project. I just want each post to be good, great even. And I guess that's why I have been paralyzed. I have loads of half-written drafts and one-liner ideas in a notes app. I just need to take a stab at them. I recently watched the movie "Tick, TIck, ... Boom" and the line "maybe try writing about what you know" seems extremely relevant here. There's going to be some embarrassingly basic posts here and that's okay. Most posts will simply be yet another variation of "how I managed to do xyz" on the internet but it's going to be written by me and that's all that matters. My perspective might even have some value to a lost and confused soul who found themselves on my page just because right combination of words in the search bar and Google's invisible hand of some sort.
+This blog will mostly be about R. I'm thinking Tidytuesday attempts, random R tips/guides, data science projects, data visualisations, perhaps some generative art and whatever else catches my interest.

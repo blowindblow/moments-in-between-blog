@@ -1,33 +1,21 @@
 ---
-title: "Moments in between"
+title: "The beginning"
 description: |
-  The beginning.
+  Trying to put the phrase "Done is better than perfect" to practice
 author:
   - name: Jolene
-    url: 
 date: 09-04-2021
 output:
   distill::distill_article:
     self_contained: false
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+At this point, this blog has been in the works for close to half a year. I struggled a lot with what to post on this blog and I still don't have an answer. Every once in a while, inspiration hits and I draft up a half-baked post but I never actually published any of them. I have loads of incomplete drafts and one-liner ideas stashed in a notes app. I know I just need to take a stab at them. I recently watched the movie *Tick, Tick, ... Boom* and the line *"maybe try writing about what you know"* seems extremely relevant here. Since I have been working on a couple of small projects, I think I will start from there. There's going to be some embarrassingly basic posts here. Some posts will simply be yet another variation of *"how I managed to do xyz"* on the internet. Who knows? My perspective might provide some value to a lost and confused soul who found their way here through a right combination of words in the search bar and Google's invisible hand.
 
-I have finally created a blog where present me can create R tutorials for future me. Often, a lot of brain juices goes into a crafting a particular function or generating a complex graph but when I inevitably revisit those code, I can never understand them. Also, all the interesting R packages or snippets I come across while scrolling through my Twitter feed needs a home where I can easily visit.
+I wish I could say <a href = "https://rstudio.github.io/distill/">`distill`</a> `r emo::ji('package')` is simple and straightforward. Well, it was at the start. I had it set up pretty quickly, then promptly left it to rot for months. When I finally decided to actually launch it and publish posts, I ran into a slew of problems. It's definitely more straightforward than `blogdown` `r emo::ji('package')` though. For now, I'm still tweaking the css and thinking of a domain name to buy. Sinking some money into this will hopefully motivate me to update this blog regularly.
 
-It takes a lot of effort to go from raw data to clean data and then from clean data to graphs, plots, etc. I aspire to capture those 'moments in between' -- where the dirty work takes place -- in this blog. I am by no means an expert in R but hopefully this blog brings me a step closer to being one.
+### What's next?
 
-Some posts will be embarrassingly basic. A tiny hope I have is that someday when I consult google, I land on my very own blog.
-
-instead of consulting google on which to use (geom_col or geom_bar), I can get my answers from this self curated blog of mine. It's probably a moonshot, if the volume and content of my Google queries is anything to by.
-
-Initially, I wanted to use the blogdown package for this blog but inertia is high and blogdown seems a lot more complicated than distill, It doesn't seem that I'm losing out any important features by choosing distill. So for now, that's what I'm going with. The priority is getting this blog up and running as soon as possible and if you're reading this, then I consider it a success. I have been sitting on this idea for almost a year!
-
-What's next?
-
-Random R tips/guides. Curation of interesting R projects. Data explorations. TidyTuesdays. That's a wish list. Realistically, this blog will not have constant updates (as much as I really really want to be consistent). My only hope is that I will keep this running, regardless of the pace. 
+Random R tips/guides. Curation of interesting R projects. Data explorations. TidyTuesdays. That's a wish list. Realistically, this blog will not have consistent updates. My only hope is that I will keep this running, regardless of the pace.
 
 Here goes nothing!
-

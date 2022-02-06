@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #20794d; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.sc { color: #20794d; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,40 +85,39 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
-
   <!--radix_placeholder_meta_tags-->
-<title>Bits and Pieces: The beginning</title>
+<title>Bits and Pieces: Crossjoins</title>
 
-<meta property="description" itemprop="description" content="Trying to put the phrase &quot;Done is better than perfect&quot; to practice"/>
+<meta property="description" itemprop="description" content="Exploring crossjoins to find all possible combinations of elements in a list"/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-09-04"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-09-04"/>
+<meta property="article:published" itemprop="datePublished" content="2021-09-08"/>
+<meta property="article:created" itemprop="dateCreated" content="2021-09-08"/>
 <meta name="article:author" content="Jolene"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Bits and Pieces: The beginning"/>
+<meta property="og:title" content="Bits and Pieces: Crossjoins"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Trying to put the phrase &quot;Done is better than perfect&quot; to practice"/>
+<meta property="og:description" content="Exploring crossjoins to find all possible combinations of elements in a list"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Bits and Pieces"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Bits and Pieces: The beginning"/>
-<meta property="twitter:description" content="Trying to put the phrase &quot;Done is better than perfect&quot; to practice"/>
+<meta property="twitter:title" content="Bits and Pieces: Crossjoins"/>
+<meta property="twitter:description" content="Exploring crossjoins to find all possible combinations of elements in a list"/>
 
 <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["The beginning"]},{"type":"character","attributes":{},"value":["Trying to put the phrase \"Done is better than perfect\" to practice"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Jolene"]}]}]},{"type":"character","attributes":{},"value":["09-04-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Crossjoins"]},{"type":"character","attributes":{},"value":["Exploring crossjoins to find all possible combinations of elements in a list"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Jolene"]}]}]},{"type":"character","attributes":{},"value":["09-08-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["the-beginning_files/anchor-4.2.2/anchor.min.js","the-beginning_files/bowser-1.9.3/bowser.min.js","the-beginning_files/distill-2.2.21/template.v2.js","the-beginning_files/header-attrs-2.10/header-attrs.js","the-beginning_files/header-attrs-2.11/header-attrs.js","the-beginning_files/jquery-1.11.3/jquery.min.js","the-beginning_files/jquery-3.6.0/jquery-3.6.0.js","the-beginning_files/jquery-3.6.0/jquery-3.6.0.min.js","the-beginning_files/jquery-3.6.0/jquery-3.6.0.min.map","the-beginning_files/popper-2.6.0/popper.min.js","the-beginning_files/tippy-6.2.7/tippy-bundle.umd.min.js","the-beginning_files/tippy-6.2.7/tippy-light-border.css","the-beginning_files/tippy-6.2.7/tippy.css","the-beginning_files/tippy-6.2.7/tippy.umd.min.js","the-beginning_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["crossjoins_files/anchor-4.2.2/anchor.min.js","crossjoins_files/bowser-1.9.3/bowser.min.js","crossjoins_files/distill-2.2.21/template.v2.js","crossjoins_files/header-attrs-2.10/header-attrs.js","crossjoins_files/jquery-1.11.3/jquery.min.js","crossjoins_files/popper-2.6.0/popper.min.js","crossjoins_files/tippy-6.2.7/tippy-bundle.umd.min.js","crossjoins_files/tippy-6.2.7/tippy-light-border.css","crossjoins_files/tippy-6.2.7/tippy.css","crossjoins_files/tippy-6.2.7/tippy.umd.min.js","crossjoins_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2419,8 +2418,8 @@ d-appendix d-footnote-list a.footnote-backlink {
   color: var(--hover-color, white);
 }</style>
 <!--/radix_placeholder_distill-->
-  <script src="../../site_libs/header-attrs-2.11/header-attrs.js"></script>
-  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="../../site_libs/header-attrs-2.10/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
   <script src="../../site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="../../site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="../../site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2440,7 +2439,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"The beginning","description":"Trying to put the phrase \"Done is better than perfect\" to practice","authors":[{"author":"Jolene","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-09-04T00:00:00.000+08:00","citationText":"Jolene, 2021"}
+{"title":"Crossjoins","description":"Exploring crossjoins to find all possible combinations of elements in a list","authors":[{"author":"Jolene","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-09-08T00:00:00.000+08:00","citationText":"Jolene, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2463,25 +2462,73 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>The beginning</h1>
+<h1>Crossjoins</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Trying to put the phrase “Done is better than perfect” to practice</p></p>
+<p><p>Exploring crossjoins to find all possible combinations of elements in a list</p></p>
 </div>
 
 <div class="d-byline">
   Jolene  
   
-<br/>09-04-2021
+<br/>09-08-2021
 </div>
 
 <div class="d-article">
-<p>At this point, this blog has been in the works for close to half a year. I struggled a lot with what to post on this blog and I still don’t have an answer. Every once in a while, inspiration hits and I draft up a half-baked post but I never actually published any of them. I have loads of incomplete drafts and one-liner ideas stashed in a notes app. I know I just need to take a stab at them. I recently watched the movie <em>Tick, Tick, … Boom</em> and the line <em>“maybe try writing about what you know”</em> seems extremely relevant here. Since I have been working on a couple of small projects, I think I will start from there. There’s going to be some embarrassingly basic posts here. Some posts will simply be yet another variation of <em>“how I managed to do xyz”</em> on the internet. Who knows? My perspective might provide some value to a lost and confused soul who found their way here through a right combination of words in the search bar and Google’s invisible hand.</p>
-<p>I wish I could say <a href = "https://rstudio.github.io/distill/"><code>distill</code></a> 📦 is simple and straightforward. Well, it was at the start. I had it set up pretty quickly, then promptly left it to rot for months. When I finally decided to actually launch it and publish posts, I ran into a slew of problems. It’s definitely more straightforward than <code>blogdown</code> 📦 though. For now, I’m still tweaking the css and thinking of a domain name to buy. Sinking some money into this will hopefully motivate me to update this blog regularly.</p>
-<h3 id="whats-next">What’s next?</h3>
-<p>Random R tips/guides. Curation of interesting R projects. Data explorations. TidyTuesdays. That’s a wish list. Realistically, this blog will not have consistent updates. My only hope is that I will keep this running, regardless of the pace.</p>
-<p>Here goes nothing!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Suppose we want to find all combinations of desserts from a list of fruits and a list of dessert types. <code>{data.table}</code> has a crossjoin function that is extremely useful to achieve that. <code>CJ</code> automatically arranges the vectors alphabetically.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://purrr.tidyverse.org'>purrr</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://crossmap.rossellhayes.com'>crossmap</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-datatable.com'>data.table</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='http://rbenchmark.googlecode.com'>rbenchmark</a></span><span class='op'>)</span>
+<span class='va'>list</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>
+  <span class='va'>fruit</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'apple'</span>,<span class='st'>'apple'</span>, <span class='st'>'orange'</span>, <span class='st'>'pear'</span>, <span class='st'>'peach'</span><span class='op'>)</span>, 
+  <span class='va'>type</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'cake'</span>, <span class='st'>'tart'</span>, <span class='st'>'pie'</span><span class='op'>)</span>,
+  <span class='va'>s</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'s'</span>, <span class='st'>'d'</span>, <span class='st'>'f'</span><span class='op'>)</span>
+<span class='op'>)</span>
+
+<span class='co'># CJ(x,y) forms a data.table from the cross product of the vectors </span>
+<span class='fu'><a href='https://Rdatatable.gitlab.io/data.table/reference/J.html'>CJ</a></span><span class='op'>(</span><span class='va'>fruit</span>, <span class='va'>type</span>, unique <span class='op'>=</span> <span class='cn'>T</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>     fruit type
+ 1:  apple cake
+ 2:  apple  pie
+ 3:  apple tart
+ 4: orange cake
+ 5: orange  pie
+ 6: orange tart
+ 7:  peach cake
+ 8:  peach  pie
+ 9:  peach tart
+10:   pear cake
+11:   pear  pie
+12:   pear tart</code></pre>
+</div>
+<p>Sidenote: I found that if I changed all the assignment operators for the list to equals, <code>fruit</code> and <code>type</code> become vectors within the list but do not exist outside the list. In other words, if I try to view <code>fruit</code>, R returns <code>Error: object 'fruit' not found</code>.</p>
+<p>Since <code>CJ(x,y)</code> is a <code>data.table</code>, the <code>{data.table}</code> syntax <code>DT[...]</code> can be used.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dessert_combi_dt</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://Rdatatable.gitlab.io/data.table/reference/J.html'>CJ</a></span><span class='op'>(</span><span class='va'>fruit</span>, <span class='va'>type</span><span class='op'>)</span><span class='op'>[</span>, <span class='va'>dessert</span> <span class='op'>:=</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>fruit</span>, <span class='va'>type</span><span class='op'>)</span><span class='op'>]</span>  
+<span class='va'>dessert_combi_dt</span>
+</code></pre>
+</div>
+</div>
+<p>Or, if you just require a vector of the combinations</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>dessert_combi</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://Rdatatable.gitlab.io/data.table/reference/J.html'>CJ</a></span><span class='op'>(</span><span class='va'>fruit</span>, <span class='va'>type</span><span class='op'>)</span><span class='op'>[</span>,<span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>fruit</span>, <span class='va'>type</span><span class='op'>)</span><span class='op'>]</span>  
+<span class='va'>dessert_combi</span>
+</code></pre>
+</div>
+<pre><code> [1] &quot;apple cake&quot;  &quot;apple cake&quot;  &quot;apple pie&quot;   &quot;apple pie&quot;  
+ [5] &quot;apple tart&quot;  &quot;apple tart&quot;  &quot;orange cake&quot; &quot;orange pie&quot; 
+ [9] &quot;orange tart&quot; &quot;peach cake&quot;  &quot;peach pie&quot;   &quot;peach tart&quot; 
+[13] &quot;pear cake&quot;   &quot;pear pie&quot;    &quot;pear tart&quot;  </code></pre>
+</div>
+<p>This post was inspired by a tip I saw online, using <code>xmap_</code> functions from <code>{crossmap}</code> 📦</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

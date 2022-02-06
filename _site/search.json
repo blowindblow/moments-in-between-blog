@@ -5,15 +5,8 @@
       "title": "About",
       "description": "Some additional details about the blog",
       "author": [],
-      "contents": "\r\nThis blog is where present me can create R tutorials for future me. A lot of brain juices goes into a crafting a particular function or generating a complex graph but when I inevitably revisit those code, I can never understand them. Also, all the interesting R packages or snippets I come across while scrolling through my Twitter feed needs a home where I can easily visit.\r\nThe title “Moments in between” is inspired by Nell’s, a Korean rock band, music album. If I were to compare their music to Western bands, it is a mix of Coldplay and Radiohead. Frankly, I’m not super familiar with either of them but it’s a comparison that I’ve seen around often, and agree with.\r\nIt takes a lot of effort to go from raw data to clean data and then from clean data to graphs, plots, etc. I aspire to capture those ‘moments in between’ – where the dirty work takes place – in this blog. I am by no means an expert in R but hopefully this blog brings me a step closer to being one.\r\nSome posts will probably be embarrassingly basic. A tiny hope I have is that instead of consulting google on which to use (geom_col or geom_bar), I can get my answers from this self curated blog of mine. It’s probably a moonshot, if the volume and content of my Google queries is anything to by.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-09-04T01:22:00+08:00"
-    },
-    {
-      "path": "index.html",
-      "title": "Moments in between",
-      "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-09-04T01:22:01+08:00"
+      "contents": "\r\nI enjoy data visualisation, and just working with data in general. My tool of choice is R, though occasionally I delve into Python. Tableau has also been really useful for quick prototyping, just to get an idea of how the graph in my head actually looks like. When I was a student, I used Stata for my final year project. That’s about it! I’ve been toying with the idea of learning javascript as well but I really should just focus on R and Python for now.\r\nThis blog will mostly be about R. I’m thinking Tidytuesday attempts, random R tips/guides, data science projects, data visualisations, perhaps some generative art and whatever else catches my interest.\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-02-06T16:46:23+08:00"
     }
   ],
   "collections": ["posts/posts.json"]

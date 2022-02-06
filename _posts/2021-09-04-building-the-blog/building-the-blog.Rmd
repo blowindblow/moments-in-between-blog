@@ -1,7 +1,7 @@
 ---
 title: "Building the blog"
 description: |
-  A short description of the post.
+  First foray into distill blogs! 
 author:
   - name: Jolene
     url: {}
@@ -9,12 +9,53 @@ date: 09-04-2021
 output:
   distill::distill_article:
     self_contained: false
-draft: true
+    toc: true
+categories: 
+  - distill
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+I hope to have a more complete post on the tweaks I made to the default distill template. But since this blog is still very much a work-in-progress, I will add to this post as I customise this blog. I have been digging into the `{distill}` `r emo::ji('package')` [Github repo](%22https://github.com/rstudio/distill) and might even fork it to change some defaults once I have a better understanding of how it works. With the amount of research I am doing, it probably defeats the purpose of choosing `{distill}` `r emo::ji('package')` over `{blogdown}` `r emo::ji('package')` for its simplicity. But at this point, I really don't feel like switching. If I can get under the hood and tweak `{distill}` `r emo::ji('package')` to the way I want, there won't be a need to jump to `{blogdown}` `r emo::ji('package')` or other alternatives.
+
+### Hover links
+
+I wanted a more obvious visual cue when the cursor is hovering over a link. This only applies to links within the article `d-article` and in a text paragraph `p`. Here's how it looks.
+
+    d-article p a {
+        border-bottom: 5px solid #cbf8df; 
+        text-decoration: none;
+        display: inline-block;
+        line-height: 0.7em;
+    }
+    d-article p a:hover {
+        background-color: #cbf8df;
+        border-bottom: 3px solid #cbf8df;
+        border-top: 2px solid #cbf8df;
+        line-height: 1em;
+    }
+
+### Inline code
+
+    d-article p code {
+      font-size: 15px;
+      font-family: 'Fira mono';
+      color: #000000;
+      background-color: #f0f0f0;
+      padding: 3px;
+    }
+
+### Inline code in aside blocks
+
+I'm not sure if there's a default setting for it already. I just formatted it to be similar to `d-article p code` but with a smaller font size and reduced padding.
+
+    d-article aside code {
+      font-size: 11px;
+      font-family: 'Fira mono';
+      color: #000000;
+      background-color: #f0f0f0;
+      padding: 2px;
+    }
+
+# Other useful links
 
 [Including meta-tagging and extra content](https://themockup.blog/posts/2021-03-21-including-and-meta-tagging-extra-content-in-a-distill-blog/){.uri}
 
@@ -32,6 +73,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <https://www.jhelvy.com/posts/2021-03-25-customizing-distill-with-htmltools-and-css/>
 
-random
+## Random
 
 <https://www.ericekholm.com/posts/2021-01-06-pulling-youtube-transcripts/>

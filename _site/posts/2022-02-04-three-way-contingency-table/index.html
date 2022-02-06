@@ -85,40 +85,63 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+<style>
+  div.csl-bib-body { }
+  div.csl-entry {
+    clear: both;
+    }
+  .hanging div.csl-entry {
+    margin-left:2em;
+    text-indent:-2em;
+  }
+  div.csl-left-margin {
+    min-width:2em;
+    float:left;
+  }
+  div.csl-right-inline {
+    margin-left:2em;
+    padding-left:1em;
+  }
+  div.csl-indent {
+    margin-left: 2em;
+  }
+</style>
 
   <!--radix_placeholder_meta_tags-->
-<title>Bits and Pieces: The beginning</title>
+<title>Bits and Pieces: Three-way contingency table</title>
 
-<meta property="description" itemprop="description" content="Trying to put the phrase &quot;Done is better than perfect&quot; to practice"/>
+<meta property="description" itemprop="description" content="Testing mutual (and partial) independence of variables in a three-way contingency table"/>
 
 
 <!--  https://schema.org/Article -->
-<meta property="article:published" itemprop="datePublished" content="2021-09-04"/>
-<meta property="article:created" itemprop="dateCreated" content="2021-09-04"/>
+<meta property="article:published" itemprop="datePublished" content="2022-02-04"/>
+<meta property="article:created" itemprop="dateCreated" content="2022-02-04"/>
 <meta name="article:author" content="Jolene"/>
 
 <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<meta property="og:title" content="Bits and Pieces: The beginning"/>
+<meta property="og:title" content="Bits and Pieces: Three-way contingency table"/>
 <meta property="og:type" content="article"/>
-<meta property="og:description" content="Trying to put the phrase &quot;Done is better than perfect&quot; to practice"/>
+<meta property="og:description" content="Testing mutual (and partial) independence of variables in a three-way contingency table"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:site_name" content="Bits and Pieces"/>
 
 <!--  https://dev.twitter.com/cards/types/summary -->
 <meta property="twitter:card" content="summary"/>
-<meta property="twitter:title" content="Bits and Pieces: The beginning"/>
-<meta property="twitter:description" content="Trying to put the phrase &quot;Done is better than perfect&quot; to practice"/>
+<meta property="twitter:title" content="Bits and Pieces: Three-way contingency table"/>
+<meta property="twitter:description" content="Testing mutual (and partial) independence of variables in a three-way contingency table"/>
 
 <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=The analysis of contingency tables;citation_publication_date=1992;citation_publisher=CRC Press;citation_doi=10.1201/b15072;citation_author=Brian S Everitt"/>
   <!--radix_placeholder_rmarkdown_metadata-->
 
 <script type="text/json" id="radix-rmarkdown-metadata">
-{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["The beginning"]},{"type":"character","attributes":{},"value":["Trying to put the phrase \"Done is better than perfect\" to practice"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Jolene"]}]}]},{"type":"character","attributes":{},"value":["09-04-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Three-way contingency table"]},{"type":"character","attributes":{},"value":["Testing mutual (and partial) independence of variables in a three-way contingency table"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Jolene"]}]}]},{"type":"character","attributes":{},"value":["02-04-2022"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["biblio.bib"]}]}
 </script>
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["the-beginning_files/anchor-4.2.2/anchor.min.js","the-beginning_files/bowser-1.9.3/bowser.min.js","the-beginning_files/distill-2.2.21/template.v2.js","the-beginning_files/header-attrs-2.10/header-attrs.js","the-beginning_files/header-attrs-2.11/header-attrs.js","the-beginning_files/jquery-1.11.3/jquery.min.js","the-beginning_files/jquery-3.6.0/jquery-3.6.0.js","the-beginning_files/jquery-3.6.0/jquery-3.6.0.min.js","the-beginning_files/jquery-3.6.0/jquery-3.6.0.min.map","the-beginning_files/popper-2.6.0/popper.min.js","the-beginning_files/tippy-6.2.7/tippy-bundle.umd.min.js","the-beginning_files/tippy-6.2.7/tippy-light-border.css","the-beginning_files/tippy-6.2.7/tippy.css","the-beginning_files/tippy-6.2.7/tippy.umd.min.js","the-beginning_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["biblio.bib","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/anchor-4.2.2/anchor.min.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/bowser-1.9.3/bowser.min.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/distill-2.2.21/template.v2.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/header-attrs-2.10/header-attrs.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/header-attrs-2.11/header-attrs.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/jquery-1.11.3/jquery.min.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/jquery-3.6.0/jquery-3.6.0.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/jquery-3.6.0/jquery-3.6.0.min.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/jquery-3.6.0/jquery-3.6.0.min.map","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/popper-2.6.0/popper.min.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/tippy-6.2.7/tippy-bundle.umd.min.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/tippy-6.2.7/tippy-light-border.css","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/tippy-6.2.7/tippy.css","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/tippy-6.2.7/tippy.umd.min.js","testing-the-mutual-independence-of-the-variables-in-a-three-way-contingency-table_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2440,7 +2463,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"The beginning","description":"Trying to put the phrase \"Done is better than perfect\" to practice","authors":[{"author":"Jolene","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-09-04T00:00:00.000+08:00","citationText":"Jolene, 2021"}
+{"title":"Three-way contingency table","description":"Testing mutual (and partial) independence of variables in a three-way contingency table","authors":[{"author":"Jolene","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-02-04T00:00:00.000+08:00","citationText":"Jolene, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2463,25 +2486,183 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>The beginning</h1>
+<h1>Three-way contingency table</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Trying to put the phrase “Done is better than perfect” to practice</p></p>
+<p><p>Testing mutual (and partial) independence of variables in a three-way contingency table</p></p>
 </div>
 
 <div class="d-byline">
   Jolene  
   
-<br/>09-04-2021
+<br/>02-04-2022
 </div>
 
 <div class="d-article">
-<p>At this point, this blog has been in the works for close to half a year. I struggled a lot with what to post on this blog and I still don’t have an answer. Every once in a while, inspiration hits and I draft up a half-baked post but I never actually published any of them. I have loads of incomplete drafts and one-liner ideas stashed in a notes app. I know I just need to take a stab at them. I recently watched the movie <em>Tick, Tick, … Boom</em> and the line <em>“maybe try writing about what you know”</em> seems extremely relevant here. Since I have been working on a couple of small projects, I think I will start from there. There’s going to be some embarrassingly basic posts here. Some posts will simply be yet another variation of <em>“how I managed to do xyz”</em> on the internet. Who knows? My perspective might provide some value to a lost and confused soul who found their way here through a right combination of words in the search bar and Google’s invisible hand.</p>
-<p>I wish I could say <a href = "https://rstudio.github.io/distill/"><code>distill</code></a> 📦 is simple and straightforward. Well, it was at the start. I had it set up pretty quickly, then promptly left it to rot for months. When I finally decided to actually launch it and publish posts, I ran into a slew of problems. It’s definitely more straightforward than <code>blogdown</code> 📦 though. For now, I’m still tweaking the css and thinking of a domain name to buy. Sinking some money into this will hopefully motivate me to update this blog regularly.</p>
-<h3 id="whats-next">What’s next?</h3>
-<p>Random R tips/guides. Curation of interesting R projects. Data explorations. TidyTuesdays. That’s a wish list. Realistically, this blog will not have consistent updates. My only hope is that I will keep this running, regardless of the pace.</p>
-<p>Here goes nothing!</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>This was one of my many attempts to analyse multiple categorical variables. The biostatistician whom I consulted suggested the use of a three-way contingency table as detailed in Chapter 4 (Multidimensional Tables) of the book “The Analysis of Contingency Tables” <span class="citation" data-cites="everitt1992analysis">(<a href="#ref-everitt1992analysis" role="doc-biblioref">Everitt 1992</a>)</span>. I spent some time writing a function for the proposed function. Someone has probably already written a function for this but I figured it would be good practice to write the function from scratch. It forces me to read the text in detail and fully understand the hypothesis testing. It was my first time using <code>arrays</code> in R. Before this, I never really had the need to explore beyond two dimensional dataframes.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>three_way_xtab</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>array</span>, <span class='va'>partial</span> <span class='op'>=</span> <span class='fl'>0</span><span class='op'>)</span><span class='op'>{</span>  
+  <span class='co'># if partial independence is of interest, set partial = 1</span>
+  
+  <span class='co'># two variable marginals</span>
+  <span class='va'>n_ij</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span><span class='op'>(</span><span class='va'>array</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>2</span><span class='op'>)</span>, <span class='va'>sum</span><span class='op'>)</span>
+  <span class='va'>n_ik</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span><span class='op'>(</span><span class='va'>array</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>, <span class='fl'>3</span><span class='op'>)</span>, <span class='va'>sum</span><span class='op'>)</span>
+  <span class='va'>n_jk</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span><span class='op'>(</span><span class='va'>array</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span>, <span class='fl'>3</span><span class='op'>)</span>, <span class='va'>sum</span><span class='op'>)</span>
+  
+  
+  <span class='co'># single variable marginals</span>
+  <span class='va'>n_i</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span><span class='op'>(</span><span class='va'>array</span>, <span class='fl'>1</span>, <span class='va'>sum</span><span class='op'>)</span>
+  <span class='va'>n_j</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span><span class='op'>(</span><span class='va'>array</span>, <span class='fl'>2</span>, <span class='va'>sum</span><span class='op'>)</span>
+  <span class='va'>n_k</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span><span class='op'>(</span><span class='va'>array</span>, <span class='fl'>3</span>, <span class='va'>sum</span><span class='op'>)</span>
+  <span class='va'>N</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span>
+  
+  
+  <span class='co'># creating an empty array based on original data array</span>
+  <span class='va'>E</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/array.html'>array</a></span><span class='op'>(</span><span class='fl'>0</span>,
+             dim <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span>,
+             dimnames <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/dimnames.html'>dimnames</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span>
+  <span class='va'>Ei</span> <span class='op'>&lt;-</span> <span class='va'>E</span>
+  <span class='va'>Ej</span> <span class='op'>&lt;-</span> <span class='va'>E</span>
+  <span class='va'>Ek</span> <span class='op'>&lt;-</span> <span class='va'>E</span>
+  
+  <span class='co'># loop to compute expected values</span>
+  <span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+    <span class='kw'>for</span> <span class='op'>(</span><span class='va'>j</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>ncol</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+      <span class='kw'>for</span> <span class='op'>(</span><span class='va'>k</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/aperm.html'>aperm</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+        <span class='va'>E</span><span class='op'>[</span><span class='va'>i</span>, <span class='va'>j</span>, <span class='va'>k</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='va'>n_i</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>*</span> <span class='va'>n_j</span><span class='op'>[</span><span class='va'>j</span><span class='op'>]</span> <span class='op'>*</span> <span class='va'>n_k</span><span class='op'>[</span><span class='va'>k</span><span class='op'>]</span> <span class='op'>/</span> <span class='va'>N</span> <span class='op'>^</span> <span class='fl'>2</span>
+      <span class='op'>}</span>
+    <span class='op'>}</span>
+  <span class='op'>}</span>
+  <span class='va'>df</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/prod.html'>prod</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>-</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span> <span class='fl'>2</span>
+  <span class='va'>chisq</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='op'>(</span><span class='op'>(</span><span class='va'>array</span> <span class='op'>-</span> <span class='va'>E</span><span class='op'>)</span> <span class='op'>^</span> <span class='fl'>2</span><span class='op'>)</span> <span class='op'>/</span> <span class='va'>E</span><span class='op'>)</span>  <span class='co'># test of mutual independence</span>
+  <span class='va'>pval</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Chisquare.html'>pchisq</a></span><span class='op'>(</span><span class='va'>chisq</span>, <span class='va'>df</span>, lower.tail <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+  
+  <span class='va'>output</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>
+      test   <span class='op'>=</span> <span class='st'>"3 variable contingency table"</span>,
+      chisq  <span class='op'>=</span> <span class='va'>chisq</span>,
+      pvalue <span class='op'>=</span> <span class='va'>pval</span>,
+      df     <span class='op'>=</span> <span class='va'>df</span>,  <span class='co'># degrees of freedom</span>
+      E      <span class='op'>=</span> <span class='va'>E</span>  <span class='co'># expected values under hypothesis of mutual independence (of all 3 variables)</span>
+  <span class='op'>)</span>
+  
+  <span class='co'># if test of mutual independence above gives a significant result, </span>
+  <span class='co'># further testing is required to ascertain if an association exists between two or all three variables </span>
+  <span class='co'># hence hypotheses of partial independence is of interest</span>
+  
+  <span class='co'># if true, the partial independence hypothesis implies the truth of additional composite hypothesis</span>
+  <span class='co'># e.g. for hypothesis P_ijk = P_i.. * P_.jk: if true, P_ij. = P_i.. * P_.j. &amp;&amp; P_i.k = P_i.. * P_..k</span>
+  
+  <span class='kw'>if</span> <span class='op'>(</span><span class='va'>partial</span> <span class='op'>==</span> <span class='fl'>1</span> <span class='op'>&amp;&amp;</span> <span class='va'>pval</span> <span class='op'>&lt;</span> <span class='fl'>0.05</span><span class='op'>)</span> <span class='op'>{</span>
+    <span class='kw'>for</span> <span class='op'>(</span><span class='va'>i</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+      <span class='kw'>for</span> <span class='op'>(</span><span class='va'>j</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>ncol</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+        <span class='kw'>for</span> <span class='op'>(</span><span class='va'>k</span> <span class='kw'>in</span> <span class='fl'>1</span><span class='op'>:</span><span class='fu'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/aperm.html'>aperm</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+          <span class='va'>Ei</span><span class='op'>[</span><span class='va'>i</span>, <span class='va'>j</span>, <span class='va'>k</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='va'>n_i</span><span class='op'>[</span><span class='va'>i</span><span class='op'>]</span> <span class='op'>*</span> <span class='va'>n_jk</span><span class='op'>[</span><span class='va'>j</span>,<span class='va'>k</span><span class='op'>]</span> <span class='op'>/</span> <span class='va'>N</span>
+          <span class='va'>Ej</span><span class='op'>[</span><span class='va'>i</span>, <span class='va'>j</span>, <span class='va'>k</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='va'>n_j</span><span class='op'>[</span><span class='va'>j</span><span class='op'>]</span> <span class='op'>*</span> <span class='va'>n_ik</span><span class='op'>[</span><span class='va'>i</span>,<span class='va'>k</span><span class='op'>]</span> <span class='op'>/</span> <span class='va'>N</span>
+          <span class='va'>Ek</span><span class='op'>[</span><span class='va'>i</span>, <span class='va'>j</span>, <span class='va'>k</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='va'>n_k</span><span class='op'>[</span><span class='va'>k</span><span class='op'>]</span> <span class='op'>*</span> <span class='va'>n_ij</span><span class='op'>[</span><span class='va'>i</span>,<span class='va'>j</span><span class='op'>]</span> <span class='op'>/</span> <span class='va'>N</span>
+        <span class='op'>}</span>
+      <span class='op'>}</span>
+    <span class='op'>}</span>
+    
+    <span class='co'># degrees of freedom</span>
+    <span class='va'>df_ijk</span> <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/prod.html'>prod</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>-</span> <span class='fu'><a href='https://rdrr.io/r/base/prod.html'>prod</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>2</span><span class='op'>:</span><span class='fl'>3</span><span class='op'>]</span><span class='op'>)</span> <span class='op'>-</span> <span class='fu'><a href='https://rdrr.io/r/base/dim.html'>dim</a></span><span class='op'>(</span><span class='va'>array</span><span class='op'>)</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>]</span> <span class='op'>+</span> <span class='fl'>1</span>
+
+    <span class='co'># test hypothesis that i is independent of j and k</span>
+    <span class='va'>chisq_i</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='op'>(</span><span class='op'>(</span><span class='va'>array</span> <span class='op'>-</span> <span class='va'>Ei</span><span class='op'>)</span> <span class='op'>^</span> <span class='fl'>2</span><span class='op'>)</span> <span class='op'>/</span> <span class='va'>Ei</span><span class='op'>)</span>
+    <span class='va'>pval_i</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Chisquare.html'>pchisq</a></span><span class='op'>(</span><span class='va'>chisq_i</span>, <span class='va'>df_ijk</span>, lower.tail <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+    
+    <span class='co'># test hypothesis that j is independent of i and k</span>
+    <span class='va'>chisq_j</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='op'>(</span><span class='op'>(</span><span class='va'>array</span> <span class='op'>-</span> <span class='va'>Ej</span><span class='op'>)</span> <span class='op'>^</span> <span class='fl'>2</span><span class='op'>)</span> <span class='op'>/</span> <span class='va'>Ej</span><span class='op'>)</span>
+    <span class='va'>pval_j</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Chisquare.html'>pchisq</a></span><span class='op'>(</span><span class='va'>chisq_j</span>, <span class='va'>df_ijk</span>, lower.tail <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+    
+    <span class='co'># test hypothesis that k is independent of i and j</span>
+    <span class='va'>chisq_k</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='op'>(</span><span class='op'>(</span><span class='op'>(</span><span class='va'>array</span> <span class='op'>-</span> <span class='va'>Ek</span><span class='op'>)</span> <span class='op'>^</span> <span class='fl'>2</span><span class='op'>)</span> <span class='op'>/</span> <span class='va'>Ek</span><span class='op'>)</span>
+    <span class='va'>pval_k</span>  <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Chisquare.html'>pchisq</a></span><span class='op'>(</span><span class='va'>chisq_k</span>, <span class='va'>df_ijk</span>, lower.tail <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+    
+    <span class='va'>output</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>
+      test     <span class='op'>=</span> <span class='st'>"3 variable contingency table"</span>,
+      chisq    <span class='op'>=</span> <span class='va'>chisq</span>,
+      pvalue   <span class='op'>=</span> <span class='va'>pval</span>,
+      df       <span class='op'>=</span> <span class='va'>df</span>,
+      E        <span class='op'>=</span> <span class='va'>E</span>,
+      Ei       <span class='op'>=</span> <span class='va'>Ei</span>,  <span class='co'># expected values under hypothesis that i is independent of j and k</span>
+      Ej       <span class='op'>=</span> <span class='va'>Ej</span>,  <span class='co'># expected values under hypothesis that j is independent of i and k</span>
+      Ek       <span class='op'>=</span> <span class='va'>Ek</span>,  <span class='co'># expected values under hypothesis that k is independent of i and j</span>
+      df_ijk   <span class='op'>=</span> <span class='va'>df_ijk</span>,  <span class='co'># degrees of freedom for partial independence hypothesis</span>
+      chisq_i  <span class='op'>=</span> <span class='va'>chisq_i</span>,
+      chisq_j  <span class='op'>=</span> <span class='va'>chisq_j</span>,
+      chisq_k  <span class='op'>=</span> <span class='va'>chisq_k</span>,
+      pval_i   <span class='op'>=</span> <span class='va'>pval_i</span>,
+      pval_j   <span class='op'>=</span> <span class='va'>pval_j</span>,
+      pval_k   <span class='op'>=</span> <span class='va'>pval_k</span>
+    <span class='op'>)</span>
+  <span class='op'>}</span>
+  
+  <span class='kw'><a href='https://rdrr.io/r/base/function.html'>return</a></span><span class='op'>(</span><span class='va'>output</span><span class='op'>)</span>
+<span class='op'>}</span>
+</code></pre>
+</div>
+</div>
+<p>Nested loops might not be the most efficient way to go about it but this is a pretty simple analysis. I was just happy that I got it to work. Now on to testing the function! I used the example that was shown in the book. It was mostly to double check that my function computed the figures correctly.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='co'># test input </span>
+<span class='co'># this is the same example shown in the book</span>
+<span class='va'>s</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/array.html'>array</a></span><span class='op'>(</span>
+  <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>16</span>,<span class='fl'>1</span>,<span class='fl'>7</span>,<span class='fl'>1</span>,<span class='fl'>15</span>,<span class='fl'>3</span>,<span class='fl'>34</span>,<span class='fl'>8</span>,<span class='fl'>5</span>,<span class='fl'>1</span>,<span class='fl'>3</span>,<span class='fl'>3</span><span class='op'>)</span>,
+  dim <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span>,<span class='fl'>2</span>,<span class='fl'>3</span><span class='op'>)</span>,
+  dimnames <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>
+    <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'nondev'</span>, <span class='st'>'dev'</span><span class='op'>)</span>,
+    <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'notatrisk'</span>, <span class='st'>'atrisk'</span><span class='op'>)</span>,
+    <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'low'</span>,<span class='st'>'med'</span>,<span class='st'>'high'</span><span class='op'>)</span>
+    <span class='op'>)</span>
+  <span class='op'>)</span>
+<span class='va'>result</span> <span class='op'>&lt;-</span> <span class='fu'>three_way_xtab</span><span class='op'>(</span><span class='va'>s</span>, partial <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span>
+
+<span class='co'># print results (exclude tables of expected value)</span>
+<span class='va'>result</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='va'>result</span><span class='op'>)</span> <span class='op'>!=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>'E'</span>,<span class='st'>'Ei'</span>,<span class='st'>'Ej'</span>,<span class='st'>'Ek'</span><span class='op'>)</span><span class='op'>]</span>
+</code></pre>
+</div>
+<pre><code>$test
+[1] &quot;3 variable contingency table&quot;
+
+$chisq
+[1] 17.30382
+
+$pvalue
+[1] 0.01553871
+
+$df
+[1] 7
+
+$df_ijk
+[1] 5
+
+$chisq_i
+[1] 6.191387
+
+$chisq_j
+[1] 12.6446
+
+$chisq_k
+[1] 15.06799
+
+$pval_i
+[1] 0.2880391
+
+$pval_j
+[1] 0.02694692
+
+$pval_k
+[1] 0.01007576</code></pre>
+</div>
+<p>It should be noted that only mutual independence (of all 3 variables) and partial independence (of any pair of variables) is considered in this function. The next chapter in the book details second order relationships. In other words, an relationship between two of the variables may differ in degree or direction in different categories of the third. The hypothesis of no second-order association between the variables is relatively straightforward. However, there is additional complexity in obtaining the estimates as they can no longer be found directly as products of various marginal totals as is currently done in testing first order relationships.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-everitt1992analysis" class="csl-entry" role="doc-biblioentry">
+Everitt, Brian S. 1992. <em>The Analysis of Contingency Tables</em>. 2nd ed. CRC Press. <a href="https://doi.org/10.1201/b15072">https://doi.org/10.1201/b15072</a>.
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -2493,7 +2674,10 @@ d-appendix d-footnote-list a.footnote-backlink {
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
-<div class="appendix-bottom"></div>
+<div class="appendix-bottom">
+  <h3 id="references">References</h3>
+  <div id="references-listing"></div>
+</div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <!--/radix_placeholder_navigation_after_body-->

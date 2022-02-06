@@ -8,10 +8,9 @@ date: 02-04-2022
 output:
   distill::distill_article:
     self_contained: false
-draft: true
 bibliography: biblio.bib
 ---
-This was one of my many explorations into analysis of multiple categorical data. The biostatistician whom I consulted suggested the use of a three-way contingency table as detailed in Chapter 4 (Multidimensional Tables) of the book "The Analysis of Contingency Tables" [@everitt1992analysis]. I spent some time writing a function for the proposed function. Someone has probably already written a function for this but I figured it would be good practice to write the function from scratch. It forces me to read the text in detail and fully understand the hypothesis testing. It was my first time using `arrays` in R. Before this, I never really had the need to explore beyond two dimensional dataframes. 
+This was one of my many attempts to analyse multiple categorical variables. The biostatistician whom I consulted suggested the use of a three-way contingency table as detailed in Chapter 4 (Multidimensional Tables) of the book "The Analysis of Contingency Tables" [@everitt1992analysis]. I spent some time writing a function for the proposed function. Someone has probably already written a function for this but I figured it would be good practice to write the function from scratch. It forces me to read the text in detail and fully understand the hypothesis testing. It was my first time using `arrays` in R. Before this, I never really had the need to explore beyond two dimensional dataframes. 
 
 ```{r setup}
 three_way_xtab <- function(array, partial = 0){  

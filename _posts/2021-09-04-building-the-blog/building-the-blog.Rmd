@@ -14,7 +14,7 @@ categories:
   - distill
 ---
 
-I hope to have a more complete post on the tweaks I made to the default distill template. But since this blog is still very much a work-in-progress, I will add to this post as I customise this blog. I have been digging into the `{distill}` `r emo::ji('package')` [Github repo](%22https://github.com/rstudio/distill) and might even fork it to change some defaults once I have a better understanding of how it works. With the amount of research I am doing, it probably defeats the purpose of choosing `{distill}` `r emo::ji('package')` over `{blogdown}` `r emo::ji('package')` for its simplicity. But at this point, I really don't feel like switching. If I can get under the hood and tweak `{distill}` `r emo::ji('package')` to the way I want, there won't be a need to jump to `{blogdown}` `r emo::ji('package')` or other alternatives.
+I hope to have a more complete post on the tweaks I made to the default distill template. But since this blog is still very much a work-in-progress, I will add to this post as I customise this blog. I have been digging into the `{distill}` `r emo::ji('package')` [Github repo](https://github.com/rstudio/distill) and might even fork it to change some defaults once I have a better understanding of how it works. With the amount of research I am doing, it probably defeats the purpose of choosing `{distill}` `r emo::ji('package')` over `{blogdown}` `r emo::ji('package')` for its simplicity. But at this point, I really don't feel like switching. If I can get under the hood and tweak `{distill}` `r emo::ji('package')` to the way I want, there won't be a need to jump to `{blogdown}` `r emo::ji('package')` or other alternatives.
 
 ### Hover links
 
